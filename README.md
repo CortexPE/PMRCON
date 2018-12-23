@@ -40,7 +40,7 @@ Easy as 1-2-3! :tada:
 $rconClient = new RCONClient("tcp://127.0.0.1", 19133, "ILYErinUwU", 2, Server::getInstance()->getLogger());
 $rconClient->sendCommand("say IT WORKS!");
 $this->getScheduler()->scheduleDelayedTask(new ClosureTask(function(int $currentTick) use ($rconClient) : void {
-	$rcon->stop();
+	$rconClient->stop();
 }), 100); // Stop the RCON Client after 5 seconds
 ```
 -----
