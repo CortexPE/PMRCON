@@ -34,6 +34,13 @@ You can easily send commands to the remote server now! This will enqueue the com
 ```php
 $rconClient->sendCommand("say Hello World!");
 ```
+### Stopping the client
+This is necessary for a smooth, clean shutdown of the server, This should usually be done on your plugin's `onDisable` method.
+
+Executing it will stop the thread's loop, then close the socket used to connect to the remote server.
+```php
+$rconClient->stop();
+```
 Easy as 1-2-3! :tada:
 # Sample Code used to test this API earlier:
 ```php
