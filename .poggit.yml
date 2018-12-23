@@ -1,0 +1,9 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/CortexPE/PMRCON
+branches:
+- master
+projects:
+  PMRCON:
+    path: ""
+    model: virion
+    type: library
+...
